@@ -14,6 +14,10 @@ app
       next();
     });
 
+    server.get('/health', (req, res) => {
+      res.send('Hellow Human...');
+    });
+
     server.get('/', (req, res) => {
       const actualPage = '/guest/landing-page';
       const queryParams = {};
@@ -37,3 +41,12 @@ app
     console.error(ex.stack);
     process.exit(1);
   });
+
+// server.get(`${'/'}/urlPath/:slug1/:slug2`, (req, res) => {
+//   const actualPage = '/file-path';
+//   const queryParams = {
+//     slug1: req.params.slug1,
+//     slug2: req.params.slug2
+//   };
+//   app.render(req, res, actualPage, queryParams);
+// });
