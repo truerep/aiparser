@@ -20,19 +20,6 @@ app
       app.render(req, res, actualPage, queryParams);
     });
 
-    server.get('/', (req, res) => {
-      res.redirect('/index');
-    });
-
-    // server.get(`${'/'}/urlPath/:slug1/:slug2`, (req, res) => {
-    //   const actualPage = '/file-path';
-    //   const queryParams = {
-    //     slug1: req.params.slug1,
-    //     slug2: req.params.slug2
-    //   };
-    //   app.render(req, res, actualPage, queryParams);
-    // });
-
     server.get('*', (req, res) => {
       req.url = req.url.replace(/\/$/, '');
       if (req.url === '') {
