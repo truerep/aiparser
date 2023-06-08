@@ -35,7 +35,7 @@ const About = () => (
             <div className="row align-center">
               <div className="col-lg-6 col-xl-5" data-aos="fade-up-sm" data-aos-delay="50">
                 <div className="text-center text-lg-start">
-                  <p className="text-primary-dark fs-sm">About GenAI.</p>
+                  <p className="text-primary-dark fs-sm">About AiParser.</p>
                   <h2 className="text-white mb-4">
                     10,000+ Writers, Marketers, & Business owners Love GenAI.
                   </h2>
@@ -103,7 +103,7 @@ const About = () => (
                   <div className="content">
                     <h4 className="text-white mb-4">Provides Useful Suggestions</h4>
                     <p>
-                      GenAI writing tools can analyze data and generate insights to help writers create more
+                      AiParser writing tools can analyze data and generate insights to help writers create more
                       compelling and informative content.
                     </p>
                   </div>
