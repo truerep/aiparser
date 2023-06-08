@@ -14,15 +14,63 @@ app
       next();
     });
 
-    server.get('/health', (req, res) => {
+    server.get('/status', (req, res) => {
       res.send('Hellow Human...');
     });
 
     server.get('/', (req, res) => {
-      const actualPage = '/guest/landing-page';
+      const actualPage = '/landing-page';
       const queryParams = {};
       app.render(req, res, actualPage, queryParams);
     });
+
+    server.get('/login', (req, res) => {
+      const actualPage = '/login';
+      const queryParams = {};
+      app.render(req, res, actualPage, queryParams);
+    });
+
+    server.get('/reset-password', (req, res) => {
+      const actualPage = '/forgot-password';
+      const queryParams = {};
+      app.render(req, res, actualPage, queryParams);
+    });
+
+    server.get('/signup', (req, res) => {
+      const actualPage = '/signup';
+      const queryParams = {};
+      app.render(req, res, actualPage, queryParams);
+    });
+
+    server.get('/pricing', (req, res) => {
+      const actualPage = '/pricing';
+      const queryParams = {};
+      app.render(req, res, actualPage, queryParams);
+    });
+
+    server.get('/about', (req, res) => {
+      const actualPage = '/about';
+      const queryParams = {};
+      app.render(req, res, actualPage, queryParams);
+    });
+
+    server.get('/contact', (req, res) => {
+      const actualPage = '/contact';
+      const queryParams = {};
+      app.render(req, res, actualPage, queryParams);
+    });
+
+    server.get('/privacy-policy', (req, res) => {
+      const actualPage = '/privacy-policy';
+      const queryParams = {};
+      app.render(req, res, actualPage, queryParams);
+    });
+
+    // server.get('*', (req, res) => {
+    //   const actualPage = '/page-not-found';
+    //   const queryParams = {};
+    //   app.render(req, res, actualPage, queryParams);
+    // });
 
     server.get('*', (req, res) => {
       req.url = req.url.replace(/\/$/, '');

@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import {
   Header
 } from '../common';
@@ -6,6 +7,9 @@ import {
 const LandingPage = () => (
   <div className="wrapper d-flex flex-column justify-between">
     <Header />
+    <Head>
+      <title>AiParser</title>
+    </Head>
     <main className="flex-grow-1">
 
       <section className="hero-section style-1 overflow-hidden bg-dark py-10 py-lg-15" data-bs-theme="dark">
@@ -34,9 +38,9 @@ const LandingPage = () => (
                 </div>
                 <div data-aos="fade-up-sm" data-aos-delay="300">
                   <div className="image-with-shape">
-                    <img src="assets/images/shapes/blurry-shape-1.svg" alt="" className="shape animate-scale" />
+                    <img src="/images/shapes/blurry-shape-1.svg" alt="" className="shape animate-scale" />
                     <div className="mt-12 rounded-5 border border-primary-dark shadow-lg overflow-hidden position-relative z-1">
-                      <img className="img-fluid d-inline-block" src="assets/images/screens/screen-1.jpg" alt="" />
+                      <img className="img-fluid d-inline-block" src="/images/screens/screen-1.jpg" alt="" />
                     </div>
                   </div>
                 </div>
@@ -46,8 +50,8 @@ const LandingPage = () => (
                   <li>Write More Engaging Emails</li>
                 </ul>
                 <div className="d-flex gap-8 align-center justify-center mt-12 review-badges">
-                  <img className="img-fluid" src="assets/images/review-logos/trustpilot_reviews.svg" alt="" />
-                  <img className="img-fluid" src="assets/images/review-logos/capterra_reviews.svg" alt="" />
+                  <img className="img-fluid" src="/images/review-logos/trustpilot_reviews.svg" alt="" />
+                  <img className="img-fluid" src="/images/review-logos/capterra_reviews.svg" alt="" />
                 </div>
               </div>
             </div>
@@ -57,7 +61,7 @@ const LandingPage = () => (
 
       <section className="features-section has-blurry-shape position-relative overflow-hidden py-10 py-lg-15 ">
         <div className="blurry-shape">
-          <img src="assets/images/shapes/blurry-shape-3.svg" alt="" className="img-fluid" />
+          <img src="/images/shapes/blurry-shape-3.svg" alt="" className="img-fluid" />
         </div>
         <div className="container">
           <div className="text-center mb-18">
@@ -174,7 +178,7 @@ const LandingPage = () => (
               </div>
               <div className="col-lg-6" data-aos="fade-up-sm" data-aos-delay="100">
                 <div className="feature-img">
-                  <img src="assets/images/illustrations/feature-illustration-1-dark.svg" alt="" className="img-fluid" />
+                  <img src="/images/illustrations/feature-illustration-1-dark.svg" alt="" className="img-fluid" />
                 </div>
               </div>
             </div>
@@ -201,7 +205,7 @@ const LandingPage = () => (
               </div>
               <div className="col-lg-6" data-aos="fade-up-sm" data-aos-delay="100">
                 <div className="feature-img">
-                  <img src="assets/images/illustrations/feature-illustration-2-dark.svg" alt="" className="img-fluid" />
+                  <img src="/images/illustrations/feature-illustration-2-dark.svg" alt="" className="img-fluid" />
                 </div>
               </div>
             </div>
@@ -260,7 +264,7 @@ const LandingPage = () => (
               </div>
               <div className="col-lg-6" data-aos="fade-up-sm" data-aos-delay="100">
                 <div className="feature-img">
-                  <img src="assets/images/illustrations/feature-illustration-3-dark.svg" alt="" className="img-fluid" />
+                  <img src="/images/illustrations/feature-illustration-3-dark.svg" alt="" className="img-fluid" />
                 </div>
               </div>
             </div>
@@ -579,7 +583,7 @@ const LandingPage = () => (
                   <span className="text-primary-dark">AiPdf.</span>
                   Received
                   {' '}
-                  <img src="assets/images/icons/star.png" alt="" />
+                  <img src="/images/icons/star.png" alt="" />
                   {' '}
                   4.8/5 Stars in Over 10,000+ Reviews.
                 </h1>
@@ -595,7 +599,7 @@ const LandingPage = () => (
                 <div className="review-card rounded h-full p-6 border bg-dark-blue-3 border-white border-opacity-10">
                   <div className="d-flex items-center gap-4 mb-6">
                     <div className="w-12 h-12 rounded-circle overflow-hidden">
-                      <img src="assets/images/review/1.png" alt="" className="w-full h-full object-cover" />
+                      <img src="/images/review/1.png" alt="" className="w-full h-full object-cover" />
                     </div>
                     <div className="">
                       <h6 className="text-white mb-1">Wade Warrent</h6>
@@ -631,7 +635,7 @@ const LandingPage = () => (
                 <div className="review-card rounded h-full p-6 border bg-dark-blue-3 border-white border-opacity-10">
                   <div className="d-flex items-center gap-4 mb-6">
                     <div className="w-12 h-12 rounded-circle overflow-hidden">
-                      <img src="assets/images/review/2.png" alt="" className="w-full h-full object-cover" />
+                      <img src="/images/review/2.png" alt="" className="w-full h-full object-cover" />
                     </div>
                     <div className="">
                       <h6 className="text-white mb-1">Dianne Russell</h6>
@@ -667,7 +671,7 @@ const LandingPage = () => (
                 <div className="review-card rounded h-full p-6 border bg-dark-blue-3 border-white border-opacity-10">
                   <div className="d-flex items-center gap-4 mb-6">
                     <div className="w-12 h-12 rounded-circle overflow-hidden">
-                      <img src="assets/images/review/3.png" alt="" className="w-full h-full object-cover" />
+                      <img src="/images/review/3.png" alt="" className="w-full h-full object-cover" />
                     </div>
                     <div className="">
                       <h6 className="text-white mb-1">Jenny Wilson</h6>
@@ -703,7 +707,7 @@ const LandingPage = () => (
                 <div className="review-card rounded h-full p-6 border bg-dark-blue-3 border-white border-opacity-10">
                   <div className="d-flex items-center gap-4 mb-6">
                     <div className="w-12 h-12 rounded-circle overflow-hidden">
-                      <img src="assets/images/review/4.png" alt="" className="w-full h-full object-cover" />
+                      <img src="/images/review/4.png" alt="" className="w-full h-full object-cover" />
                     </div>
                     <div className="">
                       <h6 className="text-white mb-1">Guy Hawkins</h6>
@@ -739,7 +743,7 @@ const LandingPage = () => (
                 <div className="review-card rounded h-full p-6 border bg-dark-blue-3 border-white border-opacity-10">
                   <div className="d-flex items-center gap-4 mb-6">
                     <div className="w-12 h-12 rounded-circle overflow-hidden">
-                      <img src="assets/images/review/1.png" alt="" className="w-full h-full object-cover" />
+                      <img src="/images/review/1.png" alt="" className="w-full h-full object-cover" />
                     </div>
                     <div className="">
                       <h6 className="text-white mb-1">Bessie Cooper</h6>
@@ -776,7 +780,7 @@ const LandingPage = () => (
                 <div className="review-card rounded h-full p-6 border bg-dark-blue-3 border-white border-opacity-10">
                   <div className="d-flex items-center gap-4 mb-6">
                     <div className="w-12 h-12 rounded-circle overflow-hidden">
-                      <img src="assets/images/review/1.png" alt="" className="w-full h-full object-cover" />
+                      <img src="/images/review/1.png" alt="" className="w-full h-full object-cover" />
                     </div>
                     <div className="">
                       <h6 className="text-white mb-1">Wade Warrent</h6>
@@ -812,7 +816,7 @@ const LandingPage = () => (
                 <div className="review-card rounded h-full p-6 border bg-dark-blue-3 border-white border-opacity-10">
                   <div className="d-flex items-center gap-4 mb-6">
                     <div className="w-12 h-12 rounded-circle overflow-hidden">
-                      <img src="assets/images/review/2.png" alt="" className="w-full h-full object-cover" />
+                      <img src="/images/review/2.png" alt="" className="w-full h-full object-cover" />
                     </div>
                     <div className="">
                       <h6 className="text-white mb-1">Dianne Russell</h6>
@@ -848,7 +852,7 @@ const LandingPage = () => (
                 <div className="review-card rounded h-full p-6 border bg-dark-blue-3 border-white border-opacity-10">
                   <div className="d-flex items-center gap-4 mb-6">
                     <div className="w-12 h-12 rounded-circle overflow-hidden">
-                      <img src="assets/images/review/3.png" alt="" className="w-full h-full object-cover" />
+                      <img src="/images/review/3.png" alt="" className="w-full h-full object-cover" />
                     </div>
                     <div className="">
                       <h6 className="text-white mb-1">Jenny Wilson</h6>
@@ -884,7 +888,7 @@ const LandingPage = () => (
                 <div className="review-card rounded h-full p-6 border bg-dark-blue-3 border-white border-opacity-10">
                   <div className="d-flex items-center gap-4 mb-6">
                     <div className="w-12 h-12 rounded-circle overflow-hidden">
-                      <img src="assets/images/review/4.png" alt="" className="w-full h-full object-cover" />
+                      <img src="/images/review/4.png" alt="" className="w-full h-full object-cover" />
                     </div>
                     <div className="">
                       <h6 className="text-white mb-1">Guy Hawkins</h6>
@@ -920,7 +924,7 @@ const LandingPage = () => (
                 <div className="review-card rounded h-full p-6 border bg-dark-blue-3 border-white border-opacity-10">
                   <div className="d-flex items-center gap-4 mb-6">
                     <div className="w-12 h-12 rounded-circle overflow-hidden">
-                      <img src="assets/images/review/1.png" alt="" className="w-full h-full object-cover" />
+                      <img src="/images/review/1.png" alt="" className="w-full h-full object-cover" />
                     </div>
                     <div className="">
                       <h6 className="text-white mb-1">Bessie Cooper</h6>
@@ -964,7 +968,7 @@ const LandingPage = () => (
                 <div className="review-card rounded h-full p-6 border bg-dark-blue-3 border-white border-opacity-10">
                   <div className="d-flex items-center gap-4 mb-6">
                     <div className="w-12 h-12 rounded-circle overflow-hidden">
-                      <img src="assets/images/review/1.png" alt="" className="w-full h-full object-cover" />
+                      <img src="/images/review/1.png" alt="" className="w-full h-full object-cover" />
                     </div>
                     <div className="">
                       <h6 className="text-white mb-1">Wade Warrent</h6>
@@ -1000,7 +1004,7 @@ const LandingPage = () => (
                 <div className="review-card rounded h-full p-6 border bg-dark-blue-3 border-white border-opacity-10">
                   <div className="d-flex items-center gap-4 mb-6">
                     <div className="w-12 h-12 rounded-circle overflow-hidden">
-                      <img src="assets/images/review/2.png" alt="" className="w-full h-full object-cover" />
+                      <img src="/images/review/2.png" alt="" className="w-full h-full object-cover" />
                     </div>
                     <div className="">
                       <h6 className="text-white mb-1">Dianne Russell</h6>
@@ -1036,7 +1040,7 @@ const LandingPage = () => (
                 <div className="review-card rounded h-full p-6 border bg-dark-blue-3 border-white border-opacity-10">
                   <div className="d-flex items-center gap-4 mb-6">
                     <div className="w-12 h-12 rounded-circle overflow-hidden">
-                      <img src="assets/images/review/3.png" alt="" className="w-full h-full object-cover" />
+                      <img src="/images/review/3.png" alt="" className="w-full h-full object-cover" />
                     </div>
                     <div className="">
                       <h6 className="text-white mb-1">Jenny Wilson</h6>
@@ -1072,7 +1076,7 @@ const LandingPage = () => (
                 <div className="review-card rounded h-full p-6 border bg-dark-blue-3 border-white border-opacity-10">
                   <div className="d-flex items-center gap-4 mb-6">
                     <div className="w-12 h-12 rounded-circle overflow-hidden">
-                      <img src="assets/images/review/4.png" alt="" className="w-full h-full object-cover" />
+                      <img src="/images/review/4.png" alt="" className="w-full h-full object-cover" />
                     </div>
                     <div className="">
                       <h6 className="text-white mb-1">Guy Hawkins</h6>
@@ -1108,7 +1112,7 @@ const LandingPage = () => (
                 <div className="review-card rounded h-full p-6 border bg-dark-blue-3 border-white border-opacity-10">
                   <div className="d-flex items-center gap-4 mb-6">
                     <div className="w-12 h-12 rounded-circle overflow-hidden">
-                      <img src="assets/images/review/1.png" alt="" className="w-full h-full object-cover" />
+                      <img src="/images/review/1.png" alt="" className="w-full h-full object-cover" />
                     </div>
                     <div className="">
                       <h6 className="text-white mb-1">Bessie Cooper</h6>
@@ -1145,7 +1149,7 @@ const LandingPage = () => (
                 <div className="review-card rounded h-full p-6 border bg-dark-blue-3 border-white border-opacity-10">
                   <div className="d-flex items-center gap-4 mb-6">
                     <div className="w-12 h-12 rounded-circle overflow-hidden">
-                      <img src="assets/images/review/1.png" alt="" className="w-full h-full object-cover" />
+                      <img src="/images/review/1.png" alt="" className="w-full h-full object-cover" />
                     </div>
                     <div className="">
                       <h6 className="text-white mb-1">Wade Warrent</h6>
@@ -1181,7 +1185,7 @@ const LandingPage = () => (
                 <div className="review-card rounded h-full p-6 border bg-dark-blue-3 border-white border-opacity-10">
                   <div className="d-flex items-center gap-4 mb-6">
                     <div className="w-12 h-12 rounded-circle overflow-hidden">
-                      <img src="assets/images/review/2.png" alt="" className="w-full h-full object-cover" />
+                      <img src="/images/review/2.png" alt="" className="w-full h-full object-cover" />
                     </div>
                     <div className="">
                       <h6 className="text-white mb-1">Dianne Russell</h6>
@@ -1217,7 +1221,7 @@ const LandingPage = () => (
                 <div className="review-card rounded h-full p-6 border bg-dark-blue-3 border-white border-opacity-10">
                   <div className="d-flex items-center gap-4 mb-6">
                     <div className="w-12 h-12 rounded-circle overflow-hidden">
-                      <img src="assets/images/review/3.png" alt="" className="w-full h-full object-cover" />
+                      <img src="/images/review/3.png" alt="" className="w-full h-full object-cover" />
                     </div>
                     <div className="">
                       <h6 className="text-white mb-1">Jenny Wilson</h6>
@@ -1253,7 +1257,7 @@ const LandingPage = () => (
                 <div className="review-card rounded h-full p-6 border bg-dark-blue-3 border-white border-opacity-10">
                   <div className="d-flex items-center gap-4 mb-6">
                     <div className="w-12 h-12 rounded-circle overflow-hidden">
-                      <img src="assets/images/review/4.png" alt="" className="w-full h-full object-cover" />
+                      <img src="/images/review/4.png" alt="" className="w-full h-full object-cover" />
                     </div>
                     <div className="">
                       <h6 className="text-white mb-1">Guy Hawkins</h6>
@@ -1289,7 +1293,7 @@ const LandingPage = () => (
                 <div className="review-card rounded h-full p-6 border bg-dark-blue-3 border-white border-opacity-10">
                   <div className="d-flex items-center gap-4 mb-6">
                     <div className="w-12 h-12 rounded-circle overflow-hidden">
-                      <img src="assets/images/review/1.png" alt="" className="w-full h-full object-cover" />
+                      <img src="/images/review/1.png" alt="" className="w-full h-full object-cover" />
                     </div>
                     <div className="">
                       <h6 className="text-white mb-1">Bessie Cooper</h6>
@@ -1559,7 +1563,7 @@ const LandingPage = () => (
         <div className="container">
           <div className="rounded-5 border position-relative z-1 bg-dark-blue-4">
             <div className="animate-scale position-absolute w-full h-full z-n1">
-              <img src="assets/images/shapes/blurry-shape-4.svg" alt="" className="bg-shape img-fluid" />
+              <img src="/images/shapes/blurry-shape-4.svg" alt="" className="bg-shape img-fluid" />
             </div>
             <div className="row justify-center">
               <div className="col-lg-10">
@@ -1579,7 +1583,7 @@ const LandingPage = () => (
                       <path fill="currentColor" d="M22.85 71.546c-.873 5.764-1.778 11.525-2.588 17.298-.462-.304-.922-.605-1.384-.91 2.439-1.254 4.864-2.527 7.207-3.954 2.158-1.317 4.212-3.127 6.536-4.109.733-.31 1.331.688.841 1.25-1.713 1.972-4.396 3.318-6.619 4.634-2.326 1.378-4.712 2.663-7.172 3.78-.633.287-1.294-.395-1.174-1.015 1.098-5.725 2.104-11.464 3.137-17.2.137-.79 1.337-.563 1.215.226Z" />
                     </svg>
                     <div className="cta-img rounded-top-4">
-                      <img src="assets/images/screens/screen-1.jpg" alt="" className="img-fluid w-full h-full object-cover" />
+                      <img src="/images/screens/screen-1.jpg" alt="" className="img-fluid w-full h-full object-cover" />
                     </div>
                   </div>
                 </div>
@@ -1703,7 +1707,7 @@ const LandingPage = () => (
           <div className="col-lg-3 order-lg-1 me-auto">
             <div className="footer-widget text-center text-lg-start">
               <a href="#">
-                <img src="assets/images/logo.svg" alt="" className="img-fluid" width="135" />
+                <img src="/images/logo.svg" alt="" className="img-fluid" width="135" />
               </a>
               <p className="fs-sm mb-0 mt-4">
                 A Magical Tool to Optimize you content for the first know who you're targeting. Identify your
